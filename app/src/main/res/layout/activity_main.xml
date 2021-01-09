@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#378245"
+    tools:context=".MainActivity"
+    android:id="@+id/parent">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello From Daeshaun!"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#D95D39"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+    />
+    <TextView
+        android:id="@+id/addCustomTextBtn"
+        android:layout_above="@+id/chgTextBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:padding="10dp"
+        android:text="Click to add custom text"
+        android:textSize="24sp"
+        android:background="#A52A2A"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/addCustomTextInput"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/chgTextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Create you own text!"
+        />
+
+    <TextView
+        android:id="@+id/chgTextBtn"
+        android:layout_above="@+id/chgBkgColorBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Click to change text"
+        android:textSize="24sp"
+        android:background="#A52A2A"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/chgBkgColorBtn"
+        android:layout_above="@+id/chgColor"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Click to change background color"
+        android:textSize="24sp"
+        android:background="#A52A2A"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/chgColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to change text color!"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="#A52A2A"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginBottom="50sp"/>
+
+</RelativeLayout>
